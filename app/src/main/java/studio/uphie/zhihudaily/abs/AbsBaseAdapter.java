@@ -13,6 +13,7 @@ public abstract class AbsBaseAdapter<T> extends BaseAdapter {
 
     protected Context context;
     protected List<T> data;
+    private String name;
 
     public AbsBaseAdapter(Context context, List<T> data) {
         this.context = context;
