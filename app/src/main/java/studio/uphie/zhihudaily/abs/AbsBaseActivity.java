@@ -38,6 +38,7 @@ public abstract class AbsBaseActivity extends AppCompatActivity implements IInit
         int layout = getLayoutId();
         if (layout == 0) {
             throw new IllegalStateException("Please specify root layout resource id for " + getClass().getSimpleName());
+
         } else {
             setContentView(layout);
             ButterKnife.bind(this);
